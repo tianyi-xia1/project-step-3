@@ -3,8 +3,7 @@ python:
     - "3.4" 
     - "3.5" 
 script: 
-    - python frenchlearning/memorization/suite.py
-    - python frenchlearning/quiz/test_suite.py
+    - python full_suite.py
     
     
 
