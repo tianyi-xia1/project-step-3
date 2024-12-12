@@ -14,8 +14,7 @@ def display_word_pairs(word_pairs, test_mode=False):
         return True
     print("\nPlease memorize the following French-English word pairs:\n")
     for pair in word_pairs:
-        print(pair.french)
-        print(pair.english)
+        print(pair.french + " - " + pair.english)
     print(
         "\nWhen you are done memorizing, type 'start' to begin the quiz, or 'exit' to finish and see your results.\n"
     )
@@ -52,7 +51,7 @@ def quiz_user(word_pairs, status_manager):
     for pair in word_pairs:
         while True:
             try:
-                answer = input(pair.french).strip().lower()
+                answer = input(pair.french + ": ").strip().lower()
                 if answer == "exit":
                     print("Exiting the quiz...\n")
                     return None
