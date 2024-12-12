@@ -52,7 +52,7 @@ def quiz_user(word_pairs, status_manager):
     for pair in word_pairs:
         while True:
             try:
-                answer = input(f"{pair.french}: ").strip().lower()
+                answer = input(pair.french).strip().lower()
                 if answer == "exit":
                     print("Exiting the quiz...\n")
                     return None
@@ -72,7 +72,7 @@ def quiz_user(word_pairs, status_manager):
                     break
                 elif is_nearly_correct(answer, pair.english.lower()):
                     raise NearlyCorrectError(
-                        f"Nearly correct! The correct answer is '{pair.english}', but we'll count it as correct."
+                        "Nearly correct! We'll count it as correct for now."
                     )
                 else:
                     print("Incorrect. The correct answer is\n")
