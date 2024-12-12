@@ -57,7 +57,8 @@ def quiz_user(word_pairs, status_manager):
                     print("Exiting the quiz...\n")
                     return None
                 elif answer == "hint":
-                    print(f"Hint: The word starts with '{pair.english[0]}'.\n")
+                    print(f"Hint: The word starts with")
+                    print(pair.english[0])
                     continue
                 if not answer.isalpha():
                     raise ValueError(
@@ -74,7 +75,8 @@ def quiz_user(word_pairs, status_manager):
                         f"Nearly correct! The correct answer is '{pair.english}', but we'll count it as correct."
                     )
                 else:
-                    print(f"Incorrect. The correct answer is '{pair.english}'.\n")
+                    print("Incorrect. The correct answer is\n")
+                    print(pair.english)
                     status_manager.update_status(pair, "incorrect")
                     wrong_pairs.append(pair)
                     break
