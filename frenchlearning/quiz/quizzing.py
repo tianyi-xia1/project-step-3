@@ -11,10 +11,11 @@ from memorization.classes import NearlyCorrectError
 
 def display_word_pairs(word_pairs, test_mode=False):
     if test_mode:
-        return 0
+        return True
     print("\nPlease memorize the following French-English word pairs:\n")
     for pair in word_pairs:
-        print(f"{pair.french} - {pair.english}")
+        print(pair.french)
+        print(pair.english)
     print(
         "\nWhen you are done memorizing, type 'start' to begin the quiz, or 'exit' to finish and see your results.\n"
     )
@@ -30,7 +31,7 @@ def display_word_pairs(word_pairs, test_mode=False):
                     "Invalid input. Please type 'start' to begin or 'exit' to finish."
                 )
         except ValueError as ve:
-            print(f"Error: {ve}")
+            print("Error")
 
 
 def clear_screen():
@@ -78,9 +79,9 @@ def quiz_user(word_pairs, status_manager):
                     wrong_pairs.append(pair)
                     break
             except ValueError as ve:
-                print(f"Error: {ve}")
+                print(ve)
             except NearlyCorrectError as ne:
-                print(f"{ne}")
+                print(ne)
                 status_manager.update_status(pair, "correct")
                 break
     return wrong_pairs
