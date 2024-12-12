@@ -5,7 +5,7 @@
 
 
 import unittest
-from classes import WordPair, EasyWordPair
+from memorization.classes import WordPair, EasyWordPair
 
 class TestClasses(unittest.TestCase):
     @classmethod
