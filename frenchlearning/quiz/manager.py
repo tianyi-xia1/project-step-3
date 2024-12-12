@@ -26,13 +26,13 @@ class StatusManager:
                     word_pair.status = Status.FAILED_FIRST_TIME
 
         except AttributeError as ex:
-            print(f"Attribute Error: {ex}")
+            print("Attribute Error")
         except ValueError as ex:
-            print(f"Value Error: {ex}")
+            print("Value Error")
         except TypeError as ex:
-            print(f"Type Error: {ex}")
+            print("Type Error")
         except Exception as ex:
-            print(f"Unexpected Error: {ex}")
+            print("Unexpected Error")
 
 
 def view_progress(status_manager):
@@ -55,6 +55,6 @@ def view_progress(status_manager):
             print("None")
 
     except TypeError as ex:
-        print(f"Type Error: {ex}")
+        print("Type Error")
     except Exception as ex:
-        print(f"Unexpected Error: {ex}")
+        print("Unexpected Error")
