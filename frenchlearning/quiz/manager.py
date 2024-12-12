@@ -3,6 +3,7 @@
 
 from memorization.classes import Status
 
+
 class StatusManager:
     def __init__(self):
         self.correct_first_time = set()
@@ -10,17 +11,17 @@ class StatusManager:
 
     def update_status(self, word_pair, result):
         try:
-            if not hasattr(word_pair, 'status'):
+            if not hasattr(word_pair, "status"):
                 raise AttributeError("word_pair object must have a 'status' attribute.")
-            
-            if result not in ['correct', 'incorrect']:
+
+            if result not in ["correct", "incorrect"]:
                 raise ValueError("Result must be either 'correct' or 'incorrect'.")
 
             if word_pair.status is None:
-                if result == 'correct':
+                if result == "correct":
                     self.correct_first_time.add(word_pair)
                     word_pair.status = Status.CORRECT_FIRST_TIME
-                elif result == 'incorrect':
+                elif result == "incorrect":
                     self.failed_first_time.add(word_pair)
                     word_pair.status = Status.FAILED_FIRST_TIME
 

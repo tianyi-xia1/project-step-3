@@ -7,18 +7,17 @@
 import unittest
 from pathlib import Path
 import sys
+
 sys.path.append(str(Path.cwd().parent))
 from quiz.quizzing import display_word_pairs
 from memorization.classes import WordPair
 from unittest.mock import patch
 
+
 class TestQuizzing(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.word_pairs = [
-            WordPair("chat", "cat"),
-            WordPair("chien", "dog")
-        ]
+        cls.word_pairs = [WordPair("chat", "cat"), WordPair("chien", "dog")]
 
     @classmethod
     def tearDownClass(cls):
@@ -29,11 +28,8 @@ class TestQuizzing(unittest.TestCase):
         self.assertEqual(len(self.word_pairs), 2)
         self.assertIsInstance(self.word_pairs[0], WordPair)
 
-if __name__ == '__main__':
-     unittest.main(argv=[''], verbosity=2, exit=False)
+
+if __name__ == "__main__":
+    unittest.main(argv=[""], verbosity=2, exit=False)
 
 # In[ ]:
-
-
-
-

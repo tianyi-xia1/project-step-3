@@ -7,9 +7,11 @@
 import unittest
 from pathlib import Path
 import sys
+
 sys.path.append(str(Path.cwd().parent))
 from quiz.manager import StatusManager
 from memorization.classes import WordPair, Status
+
 
 class TestManager(unittest.TestCase):
     @classmethod
@@ -42,12 +44,9 @@ class TestManager(unittest.TestCase):
         self.assertEqual(self.word_pair.status, Status.FAILED_FIRST_TIME)
         self.assertNotIn(self.word_pair, self.manager.correct_first_time)
 
-if __name__ == '__main__':
-    unittest.main(argv=[''], verbosity=2, exit=False)
+
+if __name__ == "__main__":
+    unittest.main(argv=[""], verbosity=2, exit=False)
 
 
 # In[ ]:
-
-
-
-

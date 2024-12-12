@@ -7,6 +7,7 @@
 import unittest
 from memorization.classes import WordPair, EasyWordPair
 
+
 class TestClasses(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -35,12 +36,9 @@ class TestClasses(unittest.TestCase):
         self.assertEqual(self.easy_pair.english, "cat")
         self.assertIsInstance(self.easy_pair, EasyWordPair)
 
-if __name__ == '__main__':
-    unittest.main(argv=[''], verbosity=2, exit=False)
+
+if __name__ == "__main__":
+    unittest.main(argv=[""], verbosity=2, exit=False)
 
 
 # In[ ]:
-
-
-
-
