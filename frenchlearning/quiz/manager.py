@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 from memorization.classes import Status
 
 class StatusManager:
@@ -26,6 +23,7 @@ class StatusManager:
                 elif result == 'incorrect':
                     self.failed_first_time.add(word_pair)
                     word_pair.status = Status.FAILED_FIRST_TIME
+
         except AttributeError as ex:
             print(f"Attribute Error: {ex}")
         except ValueError as ex:
@@ -54,9 +52,8 @@ def view_progress(status_manager):
                 print(f"{pair.french} - {pair.english}")
         else:
             print("None")
+
     except TypeError as ex:
         print(f"Type Error: {ex}")
     except Exception as ex:
         print(f"Unexpected Error: {ex}")
-
-
