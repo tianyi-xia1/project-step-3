@@ -56,8 +56,7 @@ def quiz_user(word_pairs, status_manager):
                     print("Exiting the quiz...\n")
                     return None
                 elif answer == "hint":
-                    print(f"Hint: The word starts with")
-                    print(pair.english[0])
+                    print("Hint: The word starts with" + pair.english[0])
                     continue
                 if not answer.isalpha():
                     raise ValueError(
