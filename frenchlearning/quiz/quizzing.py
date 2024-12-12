@@ -70,7 +70,9 @@ def quiz_user(word_pairs, status_manager):
                     break
                 elif is_nearly_correct(answer, pair.english.lower()):
                     raise NearlyCorrectError(
-                        "Nearly correct! We'll count it as correct for now."
+                        "Nearly correct! The abusolute correct answer is "
+                        + pair.english
+                        + ", but we'll count it as correct for now."
                     )
                 else:
                     print("Incorrect. The correct answer is\n")
