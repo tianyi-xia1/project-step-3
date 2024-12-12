@@ -10,6 +10,7 @@ import sys
 sys.path.append(str(Path.cwd().parent))
 from quiz.quizzing import display_word_pairs
 from memorization.classes import WordPair
+from unittest.mock import patch
 
 class TestQuizzing(unittest.TestCase):
     @classmethod
@@ -30,7 +31,6 @@ class TestQuizzing(unittest.TestCase):
 
 if __name__ == '__main__':
      unittest.main(argv=[''], verbosity=2, exit=False)
-
 
 # In[ ]:
 
