@@ -43,14 +43,16 @@ def view_progress(status_manager):
         print("\nWords correctly answered on the first attempt:")
         if status_manager.correct_first_time:
             for pair in status_manager.correct_first_time:
-                print(f"{pair.french} - {pair.english}")
+                print(pair.french)
+                print(pair.english)
         else:
             print("None")
 
         print("\nWords failed on the first attempt:")
         if status_manager.failed_first_time:
             for pair in status_manager.failed_first_time:
-                print(f"{pair.french} - {pair.english}")
+                print(pair.french)
+                print(pair.english)
         else:
             print("None")
 

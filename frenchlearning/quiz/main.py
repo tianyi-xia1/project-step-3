@@ -1,10 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-# This is the final file to run the whole program. To actually use the program, users only have to import this module and use the command "main.main()" to initialize
-
 import random
 from memorization.classes import EasyWordPair, MediumWordPair, HardWordPair
 from memorization.initializer import initialize_word_pairs
