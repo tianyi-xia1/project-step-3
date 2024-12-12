@@ -25,7 +25,7 @@ class TestQuizzing(unittest.TestCase):
         del cls.word_pairs
 
     def test_display_word_pairs(self):
-        self.assertTrue(display_word_pairs(self.word_pairs))
+        self.assertTrue(display_word_pairs(self.word_pairs, True))
         self.assertEqual(len(self.word_pairs), 2)
         self.assertIsInstance(self.word_pairs[0], WordPair)
 

@@ -8,7 +8,9 @@ import random
 from difflib import SequenceMatcher
 from memorization.classes import NearlyCorrectError
 
-def display_word_pairs(word_pairs):
+def display_word_pairs(word_pairs, test_mode = False):
+    if test_mode:
+        return 0
     print("\nPlease memorize the following French-English word pairs:\n")
     for pair in word_pairs:
         print(f"{pair.french} - {pair.english}")   
