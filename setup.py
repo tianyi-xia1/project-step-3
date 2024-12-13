@@ -9,7 +9,11 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/tianyi-xia1/project-step-3.git",
-    packages=find_packages(),
+    packages=[
+    "frenchlearning",
+    "frenchlearning.memorization",
+    "frenchlearning.quiz",
+   ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
