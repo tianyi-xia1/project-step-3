@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="frenchlearning",
-    version="0.1.1",
+    version="0.1.2",
     author="Tianyi Xia, Litao Zheng",
     author_email="kevinhsia6@gmail.com, zhenglitao0305@gmail.com",
     description="A Python package for learning French, including memorization and quizzing modules.",
