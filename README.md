@@ -28,3 +28,6 @@ Copyright (c) [2024] [Tianyi Xia][Litao Zheng]
 ## Authors
 Tianyi Xia
 Litao Zheng
+
+## Pypi Link
+https://pypi.org/project/frenchlearning/
