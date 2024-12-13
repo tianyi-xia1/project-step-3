@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-from memorization.classes import Status
+from frenchlearning.memorization.classes import Status
 
 
 class StatusManager:
