@@ -7,9 +7,11 @@
 import unittest
 from pathlib import Path
 import sys
+
 sys.path.append(str(Path.cwd().parent))
 from memorization.classes import EasyWordPair, MediumWordPair, HardWordPair
 from memorization.initializer import initialize_word_pairs
+
 
 class TestInitializer(unittest.TestCase):
     @classmethod
@@ -38,13 +40,9 @@ class TestInitializer(unittest.TestCase):
         self.assertEqual(self.easy_pair.difficulty, "Easy")
         self.assertNotEqual(self.easy_pair.difficulty, "Medium")
 
-   
-if __name__ == '__main__':
-    unittest.main(argv=[''], verbosity=2, exit=False)
 
+if __name__ == "__main__":
+    unittest.main(argv=[""], verbosity=2, exit=False)
 
 
 # In[ ]:
-
-
-
