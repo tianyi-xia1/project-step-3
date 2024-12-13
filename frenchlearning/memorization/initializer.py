@@ -4,10 +4,10 @@
 # In[1]:
 
 
-from pathlib import Path
-import sys
-sys.path.append(str(Path.cwd().parent))
-from memorization.classes import EasyWordPair, MediumWordPair, HardWordPair
+# from pathlib import Path
+# import sys
+# sys.path.append(str(Path.cwd().parent))
+from classes import EasyWordPair, MediumWordPair, HardWordPair
 
 def initialize_word_pairs():
     word_pairs = []
