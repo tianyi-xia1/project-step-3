@@ -6,7 +6,7 @@
 
 import random
 from difflib import SequenceMatcher
-from frenchlearning.memorization.classes import NearlyCorrectError
+from memorization.classes import NearlyCorrectError
 
 
 def display_word_pairs(word_pairs, test_mode=False):

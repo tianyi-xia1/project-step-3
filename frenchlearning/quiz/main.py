@@ -1,6 +1,6 @@
 import random
-from frenchlearning.memorization.classes import EasyWordPair, MediumWordPair, HardWordPair
-from frenchleaning.memorization.initializer import initialize_word_pairs
+from memorization.classes import EasyWordPair, MediumWordPair, HardWordPair
+from memorization.initializer import initialize_word_pairs
 from quiz.manager import StatusManager, view_progress
 from quiz.quizzing import display_word_pairs, quiz_user
 
